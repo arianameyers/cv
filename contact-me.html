@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Contact Page</h1>
+  <p>My Fictional Address</p>
+  <p>arica998@berkeley.edu</p>
+  <p>925-984-1107</p>
+
+  <form action="mailto:arica998@berkeley.edu" method="post" enctype="text/plain">
+    <!-- In order for forms to work, will require Javascript.
+         We can create the structure on HTML, but will need
+         JS for the full behavioral functionality.
+         Will need label(closing tag) and input(no closing tag)
+         elements-
+
+         Action - what happens when you click submit? will take
+         to index.html page if after action
+
+         mailto will open up default mail client while method="post" means
+         that we will transfer what user types into input
+         fields into email client
+         enctype - that the data in our form is encoded in plain text-->
+    <label>Your name</label>
+    <!-- Label Element creates a caption on a UI -->
+    <input type="text" name="yourName" value=""><br>
+    <!-- Input Element asks user to input data so the web browser
+         can process it  -->
+    <!-- Many types of inputs for input element
+         Can view on MDN
+         Name attribute - identifies the data inside each of inputs  -->
+    <label>Your email</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <!-- in order to use input email - will have to use text area element-->
+    <label>Your message</label><br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea>
+    <!-- rows determine how tall and columns determine how wide-->
+    <input type="submit" name="">
+    <!-- In order to get a submit button to appear next to the
+         text input field - you will also use the input element
+         and write 'submit' as the value of the type attribute -->
+    </thead>
+
+  </form>
+</body>
+
+</html>
